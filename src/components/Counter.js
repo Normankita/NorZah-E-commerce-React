@@ -19,7 +19,7 @@ export const Counter = () => {
 
   return (
     <section  className="counter">
-        <textarea onChange={textChange} ref={textplace} data-testid="textArea"name="wordplace"></textarea> 
+        <textarea placeholder="write your text, or paste here" onChange={textChange} ref={textplace} data-testid="textArea"name="wordplace"></textarea> 
         <button data-testid="clearBtn" disabled={char?"" : "disabled"} onClick={handleReset}>Clear Text Input</button>
         <p className="result"><span>Words: {words}</span></p>
         <p className="result"><span>Characters: {char}</span></p>     
