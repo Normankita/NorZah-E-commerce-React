@@ -8,6 +8,11 @@ main{
   padding: 40px 0px;
   color: #191919;
 }
+.header .active{
+  background-color: #858585;
+  border-radius: 5px;
+  padding: 5px;
+}
 
 .header h1{
   font-size: 32px;
