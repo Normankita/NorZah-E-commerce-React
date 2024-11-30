@@ -10,7 +10,7 @@ export const Joke = () => {
             Headers:{"Content-Type": "application/json"}
         }
         async function fetchJoke() {
-            const response = await fetch("https://api.chucknorris.io/jokes/random");
+            const response = await fetch("https://api.chucknorris.io/jokes/random", options);
             const data = await response.json();
             setChuck(data)
         }
